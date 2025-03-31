@@ -50,5 +50,6 @@ int main(){
     cout<<result2<<endl;
 
     return 0;
+    
 
 }
