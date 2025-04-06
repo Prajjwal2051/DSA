@@ -2,18 +2,18 @@
 using namespace std;
 
 bool printgroups(int arr[], int n){
-    for(int i=1;i<n;i++){
-        if(arr[i-1]!=arr[i]){
-            if(arr[i]!=arr[0]){
-                cout<<"From "<<i<<" to ";
+    for(int i=1;i<n;i++){           // starting from the 1st idx
+        if(arr[i-1]!=arr[i]){       // checking if i != i-1
+            if(arr[i]!=arr[0]){     // checking if the element is same as arr[0] or not
+                cout<<"From "<<i<<" to ";       // if not then report the starting idx
             }
             else{
-                cout<<i-1<<endl;
+                cout<<i-1<<endl;                // if yes the report its ending idx which is i-1
             }
         }
     }
-    if(arr[n-1]!=arr[0]){
-        cout<<n-1<<endl;
+    if(arr[n-1]!=arr[0]){                   // this is for the last case when the last element forms a differnt grp means not same as arr[0]
+        cout<<n-1<<endl;                    // so instead going to loop we will report the final idx of it.
     }
 }
 
