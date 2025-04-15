@@ -32,7 +32,7 @@ int bSearch(int arr[], int n, int key){
 
 int main(){
 
-    int arr[]={10,20,30,40,50,60,70};
+    int arr[]={10,8,30,4,5};
     int n=sizeof(arr)/sizeof(arr[0]);
     int key=50;
     int res1=linear_search(arr,n,key);
