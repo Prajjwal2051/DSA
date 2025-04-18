@@ -17,13 +17,13 @@ int sqaureRoot(int n){
             ans=mid;
         }
     }
-    return ans;  // -1 is comming becuare it is not the perfect square
+    return ans;  
 }
 
 
 int main(){
 
-    cout<<sqaureRoot(17)<<endl;
+    cout<<sqaureRoot(74)<<endl;
 
     return 0;
 
