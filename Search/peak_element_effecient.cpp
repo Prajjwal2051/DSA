@@ -7,12 +7,15 @@ int getPeak(int arr[], int n){
     int low=0, high=n-1;
     while(low<high){
         int mid=(low+high)/2;
+        // checking that corner case and seeing wheather our mid is peak or not
         if (((mid==0) || (arr[mid-1]<=arr[mid])) && ((mid==n-1) || (arr[mid]>=arr[mid+1]))){
             return mid;
         }
+        // here we are using the fact that if left element is greater then mid then peak is always on the left
         if(mid>0 && arr[mid-1]>=arr[mid]){
             high=mid-1;
         }
+        // here we are using the fact that if right elements is greater then mid then peak is always on the right 
         else{
             low=mid+1;
         }
